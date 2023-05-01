@@ -1,0 +1,277 @@
+.experiences {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title-section-experiences {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    user-select: none;
+}
+
+.title-section-experiences h1 {
+    font-size: 56px;
+    font-weight: 900 !important;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.title-section-experiences h1 span {
+    color: var(--main-primary-color);
+}
+
+.title-bg-experiences {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: hsla(0, 0%, 100%, .07);
+}
+
+.title-section-experiences.entrance-down-experiences {
+    animation-name: entrance-down-experiences;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-down-experiences {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-experiences.entrance-up-container-experiences {
+    animation-name: entrance-up-container-experiences;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-up-container-experiences {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title-section-experiences.entrance-up-experiences {
+    animation-name: entrance-up-experiences;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-up-experiences {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-experiences.entrance-down-container-experiences {
+    animation-name: entrance-down-container-experiences;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-down-container-experiences {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title-section-experiences.exit-up-experiences {
+    animation-name: exit-up-experiences;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.container-experiences.exit-up-container-experiences {
+    animation-name: exit-up-experiences;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-up-experiences {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+
+.title-section-experiences.exit-down-experiences {
+    animation-name: exit-down-experiences;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.container-experiences.exit-down-container-experiences {
+    animation-name: exit-down-experiences;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-down-experiences {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+
+.container-experiences {
+    margin-right: 10vw;
+    margin-left: 5vw;
+    height: 60.5vh;
+    direction: rtl;
+    padding-left: 16px;
+    border-radius: 15px;
+    border-left: none !important;
+    border-right: none !important;
+    border: 1px solid var(--main-primary-color);
+    /*background-color: #252525;*/
+}
+
+.container-experiences ul {
+    width: 100%;
+    list-style: none;
+    direction: ltr;
+}
+
+.container-experiences li {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 16px;
+}
+
+.container-experiences li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    border-left: 1px solid #333;
+}
+
+.experiences-content {
+    margin: 0 20px 0 60px;
+    color: #fff;
+}
+
+.experiences-content-h5  {
+    font-size: 18px;
+    margin: 7px 0 10px;
+}
+
+.experiences-content-span {
+    opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding-left: 26px;
+}
+
+.experiences-content-span::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 9px;
+    opacity: .8;
+}
+
+.experiences-content-p {
+    margin: 0;
+    color: #eee;
+    font-size: 14px;
+}
+
+.date-experiences {
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #252525;
+    opacity: .8;
+}
+
+.scrollbar {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    position: absolute;
+    background-color: var(--main-primary-color);
+    border: 7px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-experiences {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--main-primary-color);
+}

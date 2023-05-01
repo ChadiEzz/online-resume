@@ -11,6 +11,7 @@
     left: -83%;
     top: -50%;
     background-color: var(--main-primary-color);
+    user-select: none;
 }
 
 .hero {
@@ -27,15 +28,16 @@
     left: 40px;
     top: 40px;
     box-shadow: 0 0 7px rgba(0,0,0,.9);
+    user-select: none;
 }
 
 .hero-text {
     position: relative;
-    top: 40vh;
+    top: 45vh;
     transform: translateY(-50%);
     margin-left: 45%;
     text-align: left;
-    max-width: 42vw;
+    max-width: 600px;
 }
 
 .hero-text h1 {
@@ -47,7 +49,8 @@
     position: relative;
 }
 
-@media (min-width: 1360px) {
+/* Web */
+@media only screen and (min-width: 1200px) {
     .hero-text h1::before {
         background-color: var(--main-primary-color);
         content: "";
@@ -60,7 +63,34 @@
     }
 
     .hero-text h1 {
+        font-size: 51px;
+        line-height: 62px;
         padding-left: 70px;
+    }
+}
+
+/* Small screens - Tablets */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+   .hero-text h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .hero-text {
+        margin-left: 42%;
+        max-width: 500px;
+    }
+}
+
+/* Mobile - Tablet devices */
+@media only screen and (max-width: 991px) {
+    .hero-text h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .hero-text {
+        max-width: 300px;
     }
 }
 
@@ -73,4 +103,149 @@
     margin: 15px 0 28px;
     font-size: 16px;
     line-height: 35px;
+    text-align: justify;
 }
+
+.hero-text.fade-in {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.hero.fade-in {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.color-block.entrance-right {
+    animation-name: entrance-right;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-right {
+    from {
+        left: -200%;
+        opacity: 0;
+    }
+
+    to {
+        right: -83%;
+        opacity: 1;
+    }
+}
+
+.color-block.exit-up {
+    animation-name: exit-up;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hero.exit-up {
+    animation-name: exit-up;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hero-text.exit-up {
+    animation-name: exit-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-up {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+
+.color-block.exit-down {
+    animation-name: exit-down;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hero.exit-down {
+    animation-name: exit-down;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hero-text.exit-down {
+    animation-name: exit-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-down {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+}
+
+.hero.entrance-down {
+    animation-name: entrance-down-hero;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-down-hero {
+    from {
+        opacity: 0;
+        top: -200px;
+    }
+
+    to {
+        top: 40px;
+    }
+}
+
+.hero-text.entrance-down {
+    animation-name: entrance-down-text;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-down-text {
+    from {
+        opacity: 0;
+        top: -200px;
+    }
+
+    to {
+        top: 45vh;
+    }
+}
+

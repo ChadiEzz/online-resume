@@ -1,0 +1,227 @@
+.soft-skills {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title-section {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    user-select: none;
+}
+
+.title-section h1 {
+    font-size: 56px;
+    font-weight: 900 !important;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.title-section h1 span {
+    color: var(--main-primary-color);
+}
+
+.title-bg {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: hsla(0, 0%, 100%, .07);
+}
+
+.title-section.entrance-up {
+    animation-name: entrance-up-title;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-up-title {
+    from {
+        opacity: 0;
+        top: 200%;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.container.entrance-down {
+    animation-name: entrance-down-container;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-down-container {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container.entrance-up {
+    animation-name: entrance-up-container;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-up-container {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title-section.entrance-down {
+    animation-name: entrance-down-title;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrance-down-title {
+    from {
+        opacity: 0;
+        top: -200px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.container.exit-up {
+    animation-name: exit-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.title-section.exit-up {
+    animation-name: exit-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-up {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+
+.container.exit-down {
+    animation-name: exit-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.title-section.exit-down {
+    animation-name: exit-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-down {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(300%);
+        opacity: 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10vw;
+    margin-left: 5vw;
+    height: 60vh;
+    direction: rtl;
+}
+
+.box {
+    width: 48%;
+    padding: 20px 30px 25px 20px !important;
+    border-radius: 5px;
+    border: 1px solid var(--main-primary-color);
+    background-color: #252525;
+    box-sizing: border-box;
+    margin: 8px;
+    direction: ltr;
+    align-items: center;
+    display: flex;
+}
+
+.box .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.box .icon {
+    margin-right: 20px;
+    font-size: 50px;
+    color: var(--main-primary-color);
+}
+
+.box h2 {
+    color: white;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.box span {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.scrollbar {
+    overflow-y: auto;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    position: absolute;
+    background-color: var(--main-primary-color);
+    border: 7px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
