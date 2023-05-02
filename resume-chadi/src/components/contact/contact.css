@@ -1,0 +1,17 @@
+.contact {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    color: var(--main-primary-color);
+}
+
+.iconContact {
+    width: 100px;
+    height: 100px;
+    color: var(--main-primary-color);
+}

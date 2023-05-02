@@ -234,6 +234,12 @@
     font-size: 14px;
 }
 
+.listCustom {
+    color: var(--main-primary-color) !important;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
 .date-experiences {
     color: #fff;
     font-size: 12px;

@@ -5,6 +5,7 @@ import Menu from './components/menu/menu';
 import SoftSkills from './components/softSkills/softSkills';
 import HardSkills from './components/hardSkills/hardSkills';
 import Experiences from './components/experiences/experiences';
+import Contact from './components/contact/contact';
 
 function App() {
 
@@ -43,7 +44,10 @@ function App() {
               menuSelect === 4 ?
                 <Experiences menuWillSelect={menuWillSelect} animateEnd={animateEnd} setAnimateEnd={setAnimateEnd} menuPreviousSelect={menuPreviousSelect} />
                 :
-                ""
+                menuSelect === 5 ?
+                  <Contact menuWillSelect={menuWillSelect} animateEnd={animateEnd} setAnimateEnd={setAnimateEnd} menuPreviousSelect={menuPreviousSelect} />
+                  :
+                  ""
       }
       <Menu onSelectChange={onSelectChange} menuSelect={menuWillSelect} menuDisabled={menuDisabled} />
     </div>
