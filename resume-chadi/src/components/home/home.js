@@ -15,14 +15,14 @@ class Home extends React.Component {
 
         return (
             <div className='home'>
-                <div className={`color-block ${'entrance-right'} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'exit-up' : '') : ''}`}></div>
-                <div className={`hero ${(this.props.menuPreviousSelect === 1 ? 'fade-in' : 'entrance-down')} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'exit-up' : '') : ''}`}></div>
-                <div className={`hero-text ${(this.props.menuPreviousSelect === 1 ? 'fade-in' : 'entrance-down')} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'exit-up' : '') : ''}`}>
+                <div className={`color-block ${'entrance-right'} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'hero-exit-up' : '') : ''}`}></div>
+                <div className={`hero ${(this.props.menuPreviousSelect === 1 ? 'fade-in' : 'entrance-down')} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'hero-exit-up' : '') : ''}`}></div>
+                <div className={`hero-text ${(this.props.menuPreviousSelect === 1 ? 'fade-in' : 'entrance-down')} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'hero-exit-up' : '') : ''}`}>
                     <h1>
-                        I'M CHADI EZZEDINE.
+                        JE SUIS CHADI EZZEDINE.
                         <br />
                         <span>
-                            Software Engineer
+                            Développeur Full-Stack
                         </span>
                     </h1>
                     <p>

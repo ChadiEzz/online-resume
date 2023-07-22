@@ -94,7 +94,7 @@
 
 .menu.fade-in {
     opacity: 0;
-    animation: fade-in 2s ease-in-out forwards;
+    animation: fade-in 1s ease-in-out forwards;
 }
 
 @keyframes fade-in {
@@ -107,19 +107,36 @@
     }
 }
 
-.menu.exit-up {
-    animation-name: exit-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes exit-up {
-    from {
-    }
-
-    to {
-        transform: translateY(-200%);
-        opacity: 0;
-    }
+@media only screen and (max-width: 767px) {
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 100vh;
+        width: 100vw;
+        transform: translateY(-100%);
+      }
+    
+      .menu ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0px;
+      }
+    
+      .menu li {
+        display: flex;
+        width: 100%;
+        border-radius: 0;;
+        margin: 0;
+      }
+    
+      .menu li h2 {
+        font-size: 13px;
+        padding: 0 15px;
+      }
+    
+      .menu li:hover h2 {
+        padding-right: 20px;
+      }
 }

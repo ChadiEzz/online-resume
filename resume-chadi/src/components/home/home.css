@@ -27,7 +27,7 @@
     border-radius: 30px;
     left: 40px;
     top: 40px;
-    box-shadow: 0 0 7px rgba(0,0,0,.9);
+    box-shadow: 0 0 7px rgba(0, 0, 0, .9);
     user-select: none;
 }
 
@@ -63,17 +63,21 @@
     }
 
     .hero-text h1 {
-        font-size: 51px;
+        font-size: 40px;
         line-height: 62px;
         padding-left: 70px;
     }
 }
 
 /* Small screens - Tablets */
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-   .hero-text h1 {
-        font-size: 42px;
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+    .hero-text h1 {
+        font-size: 40px;
         line-height: 52px;
+    }
+
+    .hero-text span {
+        font-size: 37px;
     }
 
     .hero-text {
@@ -83,14 +87,66 @@
 }
 
 /* Mobile - Tablet devices */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .hero-text {
+        margin-left: 40%;
+        max-width: 400px;
+    }
+
     .hero-text h1 {
-        font-size: 42px;
+        font-size: 32px;
         line-height: 52px;
     }
 
+    .hero-text span {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .hero {
+        top: 32px;
+        height: 250px;
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 0;
+    }
+
     .hero-text {
-        max-width: 300px;
+        left: 50%;
+        margin: 32px 0 0 0;
+        height: 100%;
+        width: 85%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+        line-height: 42px;
+    }
+
+    .hero-text span {
+        font-size: 21px;
+    }
+
+    .hero-text p {
+    }
+
+    .color-block {
+        display: none;
+    }
+
+    .hero-text.entrance-down {
+        animation: none;
     }
 }
 
@@ -108,14 +164,14 @@
 
 .hero-text.fade-in {
     animation-name: fade-in;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
 .hero.fade-in {
     animation-name: fade-in;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
@@ -132,7 +188,7 @@
 
 .color-block.entrance-right {
     animation-name: entrance-right;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -150,72 +206,40 @@
 }
 
 .color-block.exit-up {
-    animation-name: exit-up;
-    animation-duration: 2.5s;
+    animation-name: hero-exit-up;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-.hero.exit-up {
-    animation-name: exit-up;
-    animation-duration: 2.5s;
+.hero.hero-exit-up {
+    animation-name: hero-exit-up;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-.hero-text.exit-up {
-    animation-name: exit-up;
+.hero-text.hero-exit-up {
+    animation-name: hero-exit-up;
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
-@keyframes exit-up {
+@keyframes hero-exit-up {
     from {
         opacity: 1;
     }
 
     to {
-        transform: translateY(-200%);
-        opacity: 0;
-    }
-}
-
-.color-block.exit-down {
-    animation-name: exit-down;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.hero.exit-down {
-    animation-name: exit-down;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.hero-text.exit-down {
-    animation-name: exit-down;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes exit-down {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(200%);
+        top: -200px;
         opacity: 0;
     }
 }
 
 .hero.entrance-down {
     animation-name: entrance-down-hero;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -248,4 +272,3 @@
         top: 45vh;
     }
 }
-

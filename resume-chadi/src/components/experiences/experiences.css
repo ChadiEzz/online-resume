@@ -40,7 +40,7 @@
 
 .title-section-experiences.entrance-down-experiences {
     animation-name: entrance-down-experiences;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -59,7 +59,7 @@
 
 .container-experiences.entrance-up-container-experiences {
     animation-name: entrance-up-container-experiences;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -78,7 +78,7 @@
 
 .title-section-experiences.entrance-up-experiences {
     animation-name: entrance-up-experiences;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -97,7 +97,7 @@
 
 .container-experiences.entrance-down-container-experiences {
     animation-name: entrance-down-container-experiences;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -250,6 +250,22 @@
     font-weight: 600;
     background-color: #252525;
     opacity: .8;
+}
+
+@media (max-width: 767px) {
+    .container-experiences {
+        margin: 0;
+        height: calc(100vh - 270px);
+        margin: 0 10px 0 10px;
+    }
+
+    .title-bg-experiences {
+        font-size: 60px;
+    }
+
+    .title-section-experiences h1 {
+        font-size: 35px;
+    }
 }
 
 .scrollbar {

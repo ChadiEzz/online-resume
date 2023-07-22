@@ -40,7 +40,7 @@
 
 .container-hard.entrance-down-hard {
     animation-name: entrance-down-container-hard;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -59,7 +59,7 @@
 
 .container-hard.entrance-up-hard {
     animation-name: entrance-up-container-hard;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -78,7 +78,7 @@
 
 .title-section-hard.entrance-up-hard {
     animation-name: entrance-up-title-hard;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -97,7 +97,7 @@
 
 .title-section-hard.entrance-down-hard {
     animation-name: entrance-down-title-hard;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -245,6 +245,36 @@
 .container-hard .icon {
     color: var(--main-primary-color);
     font-size: 30px;
+}
+
+@media (max-width: 767px) {
+    .container-hard {
+        margin: 0;
+        height: calc(100vh - 265px);
+    }
+
+    .title-bg-hard {
+        font-size: 60px;
+    }
+
+    .title-section-hard h1 {
+        font-size: 35px;
+    }
+
+    .box-hard {
+        width: 100%;
+        padding: 10px 15px 15px 10px !important;
+    }
+
+    .box-hard .icon {
+        margin-right: 20px;
+        font-size: 30px;
+        color: var(--main-primary-color);
+    }
+
+    .box-hard h2 {
+        font-size: 20px;
+    }
 }
 
 .scrollbar {

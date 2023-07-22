@@ -26,7 +26,7 @@ function App() {
     setTimeout(() => {
       setMenuSelect(selectValue);
       setMenuDisabled(false);
-    }, 2500);
+    }, 1200);
   }
 
   return (

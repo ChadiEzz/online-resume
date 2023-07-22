@@ -43,31 +43,40 @@ class HardSkills extends React.Component {
                                 <i class="devicon-vuejs-plain" />
                                 <span>Vue.js</span>
                             </div>
-                            <div className='content-hard'>
-                                <i class="devicon-nodejs-plain" />
-                                <span>Node.Js</span>
-                            </div>
-                            <div className='content-hard'>
-                                <i class="devicon-dot-net-plain" />
-                                <span>.NET</span>
-                            </div>
-                            <div className='content-hard'>
-                                <i class="devicon-vscode-plain" />
-                                <span>VS Code</span>
-                            </div>
-                            <div className='content-hard'>
-                                <i class="devicon-visualstudio-plain" />
-                                <span>Visual Studio</span>
-                            </div>
-                            <div className='content-hard'>
-                                <i class="devicon-git-plain" />
-                                <span>Git</span>
-                            </div>
-                            <div className='content-hard'>
-                                <i class="devicon-azure-plain" />
-                                <span>Azure DevOps</span>
-                            </div>
                         </div>
+                        <div className='content-hard'>
+                            <i class="devicon-git-plain" />
+                            <span>Git</span>
+                        </div>
+                        <div className='content-hard'>
+                            <i class="devicon-vscode-plain" />
+                            <span>VS Code</span>
+                        </div>
+                        <div className='content-hard'>
+                            <i class="devicon-sequelize-plain" />
+                            <span>Sequelize</span>
+                        </div>
+
+                        <div className='content-hard'>
+                            <i class="devicon-nodejs-plain" />
+                            <span>Node.Js</span>
+                        </div>
+                        {
+                            /*
+                        <div className='content-hard'>
+                            <i class="devicon-azure-plain" />
+                            <span>Azure DevOps</span>
+                        </div>
+                        <div className='content-hard'>
+                            <i class="devicon-visualstudio-plain" />
+                            <span>Visual Studio</span>
+                        </div>
+                        <div className='content-hard'>
+                            <i class="devicon-dot-net-plain" />
+                            <span>.NET</span>
+                        </div>
+                             */
+                        }
                     </div>
                     <div className='box-hard'>
                         <h2>Coding Languages</h2>
@@ -88,7 +97,9 @@ class HardSkills extends React.Component {
                                 <i class="devicon-css3-plain" />
                                 <span>CSS3</span>
                             </div>
-                            <div className='content-hard'>
+                            {
+                                /*
+                                <div className='content-hard'>
                                 <i class="devicon-csharp-plain" />
                                 <span>C Sharp</span>
                             </div>
@@ -100,6 +111,8 @@ class HardSkills extends React.Component {
                                 <i class="devicon-python-plain" />
                                 <span>Python</span>
                             </div>
+                                 */
+                            }
                         </div>
                     </div>
                     <div className='box-hard'>
@@ -113,10 +126,14 @@ class HardSkills extends React.Component {
                                 <i class="devicon-mongodb-plain" />
                                 <span>MongoDB</span>
                             </div>
-                            <div className='content-hard'>
+                            {
+                                /*
+                                <div className='content-hard'>
                                 <i class="devicon-microsoftsqlserver-plain" />
                                 <span>SQL Server</span>
-                            </div>
+                                </div>
+                                 */
+                            }
                         </div>
                     </div>
                     <div className='box-hard unjustify-hard'>
@@ -130,7 +147,7 @@ class HardSkills extends React.Component {
                                     English : Business
                                 </li>
                                 <li>
-                                    Japanese : <FontAwesomeIcon className='icon' icon={faPersonDigging} /> Work in progress <FontAwesomeIcon className='icon' icon={faPersonDigging} />
+                                    Japanese : Work in progress <FontAwesomeIcon className='icon' icon={faPersonDigging} />
                                 </li>
                             </ul>
                         </div>
