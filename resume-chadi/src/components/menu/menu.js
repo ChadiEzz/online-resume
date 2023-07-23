@@ -53,16 +53,12 @@ class Menu extends React.Component {
                         </i>
                         <h2>experience</h2>
                     </li>
-                    {
-                        /*
-                        <li className={`${this.props.menuDisabled ? 'enabled' : 'disabled'} ${this.props.menuSelect === 5 ? 'selected' : 'unselected'}`} onClick={() => this.props.onSelectChange(5)}>
-                            <i>
-                                <FontAwesomeIcon icon={faEnvelope} />
-                            </i>
-                            <h2>contact</h2>
-                        </li>
-                        */
-                    }
+                    <li className={`${this.props.menuDisabled ? 'enabled' : 'disabled'} ${this.props.menuSelect === 5 ? 'selected' : 'unselected'}`} onClick={() => this.props.onSelectChange(5)}>
+                        <i>
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </i>
+                        <h2>contact</h2>
+                    </li>
                 </ul>
             </div>
         );

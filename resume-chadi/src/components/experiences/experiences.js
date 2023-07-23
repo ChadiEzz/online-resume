@@ -21,8 +21,8 @@ class Experiences extends React.Component {
             <div className='experiences'>
                 <div className={`title-section-experiences ${(this.props.menuPreviousSelect > 4 ? 'entrance-down-experiences' : 'entrance-up-experiences')} ${this.props.animateEnd ? (this.props.menuWillSelect > 4 ? 'exit-up-experiences' : 'exit-down-experiences') : ''}`}>
                     <h1>
-                        MY{' '}
-                        <span>EXPERIENCE</span>
+                        MES{' '}
+                        <span>EXPERIENCES</span>
                     </h1>
                     <span className='title-bg-experiences'>RESUME</span>
                 </div>
@@ -33,21 +33,21 @@ class Experiences extends React.Component {
                                 <FontAwesomeIcon icon={faBriefcase} />
                             </i>
                             <div className='experiences-content'>
-                                <span className='date-experiences'>October 2020 - Present</span>
+                                <span className='date-experiences'>Octobre 2020 - Juin 2020</span>
                                 <h5 className='experiences-content-h5'>
-                                    FULLSTACK ENGINEER
+                                    Developpeur FullStack
                                     <span className='experiences-content-span'>
                                         Septeo Solutions Notaires
                                     </span>
                                 </h5>
                                 <p className='experiences-content-p'>
-                                    Work in a team following the Agile Scrum methodology, development
-                                    of new features, bug fixes, code refactoring projects, redesign of the
-                                    front-end interface, proposals and implementation of POC,
-                                    implementation of automation pipelines.
+                                    Travail dans une equipe suivant la methodologie Agile Scrum,
+                                    developpement de nouvelles fonctionnalites, corrections de bugs,
+                                    projets de refactorisation du code, refonte du front-end, propositions et
+                                    mis en place de POC, mis en place de pipeline d'automatisation.
                                     <br />
                                     <br />
-                                    SKILLS :
+                                    COMPETENCES :
                                     <br />
                                     <span className='listCustom'>•</span> Vue.js, TypeScript, SCSS, npm, Figma
                                     <br />
@@ -62,18 +62,18 @@ class Experiences extends React.Component {
                                 <FontAwesomeIcon icon={faBriefcase} />
                             </i>
                             <div className='experiences-content'>
-                                <span className='date-experiences'>April - September 2020</span>
+                                <span className='date-experiences'>Avril - Septembre 2020</span>
                                 <h5 className='experiences-content-h5'>
-                                    Web developer
+                                    Developpeur Web
                                     <span className='experiences-content-span'>
                                         ELISSAR Logiciels
                                     </span>
                                 </h5>
                                 <p className='experiences-content-p'>
-                                    Development, update and deployment of a Citizen Portal
+                                    Developpement, mise à jour et deploiement d'un Portail Citoyen
                                     <br />
                                     <br />
-                                    SKILLS :
+                                    COMPETENCES :
                                     <br />
                                     <span className='listCustom'>•</span> ReactJS, JavaScript, CSS, NodeJS, Express.js
                                     <br />
@@ -92,23 +92,23 @@ class Experiences extends React.Component {
                             <div className='experiences-content'>
                                 <span className='date-experiences'>2020 - 2021</span>
                                 <h5 className='experiences-content-h5'>
-                                    Bachelor Software Engineering Manager
+                                    Bachelor Responsable en Ingénierie des Logiciels
                                     <span className='experiences-content-span'>
                                         CESI
                                     </span>
                                 </h5>
                                 <p className='experiences-content-p'>
-                                    <span className='listCustom'>•</span> Analyze, model, design and develop software solutions
+                                    <span className='listCustom'>•</span> Analyser, modeliser, concevoir et developper les solutions logicielles
                                     <br />
-                                    <span className='listCustom'>•</span> Organize and manage an IT project
+                                    <span className='listCustom'>•</span> Organiser et piloter un projet informatique
                                     <br />
-                                    <span className='listCustom'>•</span> Ensure the quality of software development
+                                    <span className='listCustom'>•</span> Assurer la qualite des developpements logiciels
                                     <br />
-                                    <span className='listCustom'>•</span> Commissioning, maintaining and securing computer applications
+                                    <span className='listCustom'>•</span> Mettre en service, maintenir et securiser les applications informatiques
                                     <br />
-                                    <span className='listCustom'>•</span> Manage teams and resources
+                                    <span className='listCustom'>•</span> Gerer les equipes et les ressources
                                     <br />
-                                    <span className='listCustom'>•</span> Anticipating technological evolutions
+                                    <span className='listCustom'>•</span> Anticiper les evolutions technologiques
                                 </p>
                             </div>
                         </li>
@@ -119,21 +119,21 @@ class Experiences extends React.Component {
                             <div className='experiences-content'>
                                 <span className='date-experiences'>2016 - 2019</span>
                                 <h5 className='experiences-content-h5'>
-                                    Information Technology Expert
+                                    Expert en Technologies de l'Information
                                     <span className='experiences-content-span'>
                                         Epitech
                                     </span>
                                 </h5>
                                 <p className='experiences-content-p'>
-                                    <span className='listCustom'>•</span> Programming in different languages (C, C++, Python, Bash, Assembly, Kotlin, Java)
+                                    <span className='listCustom'>•</span> Programmation dans differents languages (C, C++, Python, Bash, Assembleur, Kotlin, Java)
                                     <br />
-                                    <span className='listCustom'>•</span> Ensure the quality of software development
+                                    <span className='listCustom'>•</span> Assurer la qualite des developpements logiciels
                                     <br />
-                                    <span className='listCustom'>•</span> Software Architecture
+                                    <span className='listCustom'>•</span> Architecture logicielle
                                     <br />
-                                    <span className='listCustom'>•</span> Project management
+                                    <span className='listCustom'>•</span> Gestion de projet
                                     <br />
-                                    <span className='listCustom'>•</span> Articial intelligence
+                                    <span className='listCustom'>•</span> Intelligence articielle
                                 </p>
                             </div>
                         </li>

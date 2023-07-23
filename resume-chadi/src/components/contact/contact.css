@@ -15,3 +15,39 @@
     height: 100px;
     color: var(--main-primary-color);
 }
+
+.contact.contact-entrance-up {
+    animation-name: contact-entrance-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact-entrance-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contact.contact-exit-down {
+    animation-name: contact-exit-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact-exit-down {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

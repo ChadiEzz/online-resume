@@ -207,6 +207,7 @@
 .experiences-content-h5  {
     font-size: 18px;
     margin: 7px 0 10px;
+    color: var(--main-primary-color);
 }
 
 .experiences-content-span {
@@ -215,6 +216,8 @@
     font-size: 15px;
     position: relative;
     padding-left: 26px;
+    color: white;
+    text-decoration: underline;
 }
 
 .experiences-content-span::before {
@@ -264,7 +267,7 @@
     }
 
     .title-section-experiences h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 

@@ -15,7 +15,7 @@ class Home extends React.Component {
 
         return (
             <div className='home'>
-                <div className={`color-block ${'entrance-right'} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'hero-exit-up' : '') : ''}`}></div>
+                <div className={`color-block ${'entrance-right'} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'block-exit-up' : '') : ''}`}></div>
                 <div className={`hero ${(this.props.menuPreviousSelect === 1 ? 'fade-in' : 'entrance-down')} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'hero-exit-up' : '') : ''}`}></div>
                 <div className={`hero-text ${(this.props.menuPreviousSelect === 1 ? 'fade-in' : 'entrance-down')} ${this.props.animateEnd ? (this.props.menuWillSelect > 1 ? 'hero-exit-up' : '') : ''}`}>
                     <h1>
@@ -26,8 +26,10 @@ class Home extends React.Component {
                         </span>
                     </h1>
                     <p>
-                        As a software engineer with over three years of experience, I have developed a strong foundation in web application development.
-                        I am passionate about building scalable and efficient applications that deliver a seamless user experience.
+                        Après 5 années d'études, dont 3 ans en alternance en tant que développeur Full-Stack, j'ai développé une base solide dans le développement d'applications Web. Je suis passionné par la création d'applications évolutives et efficaces qui offrent une expérience utilisateur fluide.
+                        <br />
+                        <br />
+                        Actuellement à l'écoute du marché en tant que développeur Full-Stack Javascript et Typescript avec pour objectif de signer mon premier CDI, mais aussi d'opportunités de missions en freelance.
                     </p>
                 </div>
             </div>

@@ -29,7 +29,7 @@ class HardSkills extends React.Component {
                 </div>
                 <div className={`container-hard scrollbar ${(this.props.menuPreviousSelect > 3 ? 'entrance-down-hard' : 'entrance-up-hard')} ${this.props.animateEnd ? (this.props.menuWillSelect > 3 ? 'exit-up-hard' : 'exit-down-hard') : ''}`}>
                     <div className='box-hard'>
-                        <h2>Productivity</h2>
+                        <h2>Productivite</h2>
                         <div className='item-list-hard'>
                             <div className='content-hard'>
                                 <i class="devicon-sass-plain" />
@@ -79,7 +79,7 @@ class HardSkills extends React.Component {
                         }
                     </div>
                     <div className='box-hard'>
-                        <h2>Coding Languages</h2>
+                        <h2>Langages</h2>
                         <div className='item-list-hard'>
                             <div className='content-hard'>
                                 <i class="devicon-javascript-plain" />
@@ -116,7 +116,7 @@ class HardSkills extends React.Component {
                         </div>
                     </div>
                     <div className='box-hard'>
-                        <h2>Database</h2>
+                        <h2>Base de donnee</h2>
                         <div className='item-list-hard'>
                             <div className='content-hard'>
                                 <i class="devicon-mysql-plain" />
@@ -137,17 +137,17 @@ class HardSkills extends React.Component {
                         </div>
                     </div>
                     <div className='box-hard unjustify-hard'>
-                        <h2>Languages</h2>
+                        <h2>Langues</h2>
                         <div className='item-list-hard'>
                             <ul>
                                 <li>
-                                    French : Native
+                                    Francais : Natif
                                 </li>
                                 <li>
-                                    English : Business
+                                    Anglais : Pro
                                 </li>
                                 <li>
-                                    Japanese : Work in progress <FontAwesomeIcon className='icon' icon={faPersonDigging} />
+                                    Japonais : <FontAwesomeIcon className='icon' icon={faPersonDigging} />
                                 </li>
                             </ul>
                         </div>

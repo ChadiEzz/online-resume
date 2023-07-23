@@ -1,7 +1,5 @@
-.home {
-    width: 100vw;
-    height: 100vh;
-}
+/*.home {
+}*/
 
 .color-block {
     position: fixed;
@@ -123,7 +121,6 @@
     .hero-text {
         left: 50%;
         margin: 32px 0 0 0;
-        height: 100%;
         width: 85%;
         position: absolute;
         transform: translateX(-50%);
@@ -139,6 +136,7 @@
     }
 
     .hero-text p {
+        padding-bottom: 50px;
     }
 
     .color-block {
@@ -160,6 +158,7 @@
     font-size: 16px;
     line-height: 35px;
     text-align: justify;
+    hyphens: auto;
 }
 
 .hero-text.fade-in {
@@ -205,11 +204,22 @@
     }
 }
 
-.color-block.exit-up {
-    animation-name: hero-exit-up;
+.color-block.block-exit-up {
+    animation-name: block-exit-up;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+}
+
+@keyframes block-exit-up {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 }
 
 .hero.hero-exit-up {
