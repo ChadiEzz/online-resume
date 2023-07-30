@@ -48,7 +48,7 @@
 }
 
 .box {
-    width: 48%;
+    width: 46%;
     padding: 20px 30px 25px 20px !important;
     border-radius: 5px;
     border: 1px solid var(--main-primary-color);
@@ -84,7 +84,7 @@
     hyphens: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .container {
         margin: 0;
         height: calc(100vh - 265px);

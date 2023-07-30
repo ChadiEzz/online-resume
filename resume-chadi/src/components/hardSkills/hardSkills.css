@@ -165,7 +165,7 @@
 }
 
 .box-hard {
-    width: 48%;
+    width: 46%;
     padding: 10px !important;
     border-radius: 5px;
     border: 1px solid var(--main-primary-color);
@@ -247,7 +247,7 @@
     font-size: 30px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .container-hard {
         margin: 0;
         height: calc(100vh - 265px);
